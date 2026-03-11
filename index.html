@@ -4,22 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Huy & Linh | Princess Love</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;700&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- PASSWORD GATE -->
+  <!-- PASSWORD -->
   <div class="password-screen" id="passwordScreen">
     <div class="password-card">
       <div class="password-kitty">🎀🐱💗</div>
       <h1>Princess Love</h1>
-      <p>Chiếc tình yêu dành riêng cho <strong>Lê Đức Huy</strong> và <strong>Nguyễn Khánh Linh</strong></p>
-      <p class="hint">Mật khẩu... </p>
+      <p>
+        Chiếc web tình yêu dành riêng cho
+        <strong>Lê Đức Huy</strong> và
+        <strong>Nguyễn Khánh Linh</strong>
+      </p>
+      <p class="hint">
+        Mật khẩu gợi ý: ...
+      </p>
 
       <div class="password-box">
-        <input type="password" id="lovePassword" placeholder="Nhập mật khẩu tình yêu..." />
+        <input
+          type="password"
+          id="lovePassword"
+          placeholder="Nhập mật khẩu tình yêu..."
+        />
         <button id="enterLoveBtn">Mở trái tim</button>
       </div>
 
@@ -36,7 +48,10 @@
     </div>
   </div>
 
-  <!-- EFFECT LAYERS -->
+  <!-- FIREWORK -->
+  <canvas id="fireworks"></canvas>
+
+  <!-- EFFECTS -->
   <div class="floating-hearts" id="floatingHearts"></div>
   <div class="floating-petals" id="floatingPetals"></div>
   <div class="floating-stars" id="floatingStars"></div>
@@ -51,7 +66,7 @@
         <div class="logo-icon">🎀</div>
         <div class="logo-text">
           <h2>Huy & Linh</h2>
-          <span>Princess Hello Kitty Love</span>
+          <span>PRINCESS HELLO KITTY LOVE</span>
         </div>
       </div>
 
@@ -60,6 +75,7 @@
         <a href="#about">Giới thiệu</a>
         <a href="#timeline">Kỷ niệm</a>
         <a href="#gallery">Album</a>
+        <a href="#reasons">Yêu em vì</a>
         <a href="#letter">Thư tình</a>
       </nav>
 
@@ -74,14 +90,19 @@
   <section class="hero container" id="home">
     <div class="hero-left reveal">
       <div class="hero-badge">👑 Love since 07/04/2025</div>
+
       <h1>
-       tình yêu công chúa<br>
+        Web tình yêu công chúa<br>
         <span>dành cho Khánh Linh</span>
       </h1>
+
       <p>
-        Một góc nhỏ thật xinh dành riêng cho <strong>Lê Đức Huy</strong> và
-        <strong>Nguyễn Khánh Linh</strong>. Vì Linh thích màu hồng và Hello Kitty,
-        nên chiếc này được làm theo phong cách công chúa dễ thương nhất.
+        Một góc nhỏ thật xinh dành riêng cho
+        <strong>Lê Đức Huy</strong> và
+        <strong>Nguyễn Khánh Linh</strong>.
+        Vì Linh thích màu hồng và Hello Kitty,
+        nên chiếc web này được làm theo phong cách công chúa dễ thương,
+        ngọt ngào và nổi bật nhất.
       </p>
 
       <div class="hero-names">
@@ -118,9 +139,11 @@
     <div class="hero-right reveal">
       <div class="princess-card">
         <div class="crown">👑</div>
+
         <div class="kitty-face-wrap">
           <div class="kitty-ear left"></div>
           <div class="kitty-ear right"></div>
+
           <div class="kitty-face">
             <div class="kitty-bow">
               <span class="bow-left"></span>
@@ -140,6 +163,7 @@
             <span class="whisker w6"></span>
           </div>
         </div>
+
         <div class="princess-dress"></div>
         <h3>Princess Khánh Linh 🎀</h3>
       </div>
@@ -150,10 +174,11 @@
   <section class="section container" id="about">
     <div class="section-title reveal">
       <span>💗 Giới thiệu</span>
-      <h2>g</h2>
+      <h2>Chiếc web nhỏ nhưng đầy yêu thương</h2>
       <p>
-        Đây là món quà online dễ thương dành cho Linh, nơi lưu lại ngày yêu nhau,
-        những lời ngọt ngào, những bức ảnh và những điều đẹp nhất của hai đứa.
+        Đây là món quà online dễ thương dành cho Linh,
+        nơi lưu lại ngày yêu nhau, những lời ngọt ngào,
+        những bức ảnh và những điều đẹp nhất của hai đứa.
       </p>
     </div>
 
@@ -161,24 +186,30 @@
       <div class="glass-card reveal">
         <h3>💞 Điều đặc biệt</h3>
         <p>
-          Từ ngày <strong>07/04/2025</strong>, câu chuyện tình yêu của
-          <strong>Lê Đức Huy</strong> và <strong>Nguyễn Khánh Linh</strong> đã bắt đầu.
-          Kể từ đó, mỗi ngày đều trở nên đáng nhớ hơn, ngọt ngào hơn, và vui hơn rất nhiều.
+          Từ ngày <strong>07/04/2025</strong>,
+          câu chuyện tình yêu của
+          <strong>Lê Đức Huy</strong> và
+          <strong>Nguyễn Khánh Linh</strong> đã bắt đầu.
+          Kể từ đó, mỗi ngày đều trở nên đáng nhớ hơn,
+          ngọt ngào hơn và vui hơn rất nhiều.
         </p>
       </div>
 
       <div class="glass-card reveal">
         <h3>🎀 Sở thích của Linh</h3>
         <p>
-          Linh thích <strong>màu hồng</strong>, thích sự dễ thương và phong cách
+          Linh thích <strong>màu hồng</strong>,
+          thích sự dễ thương và phong cách
           <strong>Hello Kitty</strong>,
+          nên toàn bộ web này được thiết kế theo tone công chúa hồng xinh xắn.
         </p>
       </div>
 
       <div class="glass-card reveal">
         <h3>🌸 Món quà dành riêng</h3>
         <p>
-          Đây không chỉ là một website, mà còn là một chiếc hộp lưu giữ kỷ niệm,
+          Đây không chỉ là một website,
+          mà còn là một chiếc hộp lưu giữ kỷ niệm,
           để mỗi lần mở ra đều cảm thấy trái tim rung rinh thêm một chút.
         </p>
       </div>
@@ -235,7 +266,7 @@
       <h2>Slider ảnh của hai đứa</h2>
       <p>
         Mình làm sẵn slider. Bạn chỉ cần thay ảnh vào là xong.
-        Hiện tại mình để ảnh mẫu bằng emoji để bạn dễ sửa.
+        Hiện tại mình để ảnh mẫu bằng emoji để bạn dễ sửa trước.
       </p>
     </div>
 
@@ -284,6 +315,43 @@
     <div class="dots" id="dots"></div>
   </section>
 
+  <!-- REASONS -->
+  <section class="section container" id="reasons">
+    <div class="section-title reveal">
+      <span>💘 Yêu em vì</span>
+      <h2>Những điều anh thương ở Linh</h2>
+      <p>
+        Có rất nhiều lý do để yêu một người.
+        Nhưng với Linh, từ sự dễ thương cho đến nụ cười đều làm trái tim anh rung động.
+      </p>
+    </div>
+
+    <div class="about-grid">
+      <div class="glass-card reveal">
+        <h3>😊 Nụ cười của em</h3>
+        <p>
+          Nụ cười của em làm cho một ngày bình thường trở nên dịu dàng và vui hơn rất nhiều.
+        </p>
+      </div>
+
+      <div class="glass-card reveal">
+        <h3>🎀 Sự đáng yêu</h3>
+        <p>
+          Từ sở thích màu hồng đến phong cách Hello Kitty,
+          mọi thứ ở em đều khiến anh thấy em rất đặc biệt.
+        </p>
+      </div>
+
+      <div class="glass-card reveal">
+        <h3>💗 Sự ấm áp</h3>
+        <p>
+          Ở cạnh em, anh luôn thấy bình yên, nhẹ nhàng
+          và muốn ở bên em thật lâu hơn nữa.
+        </p>
+      </div>
+    </div>
+  </section>
+
   <!-- LETTER -->
   <section class="section container" id="letter">
     <div class="section-title reveal">
@@ -296,22 +364,26 @@
       <div class="letter-paper">
         <p>
           Gửi em, Nguyễn Khánh Linh của anh.
-          Cảm ơn em đã đến và làm cho cuộc sống của anh trở nên dịu dàng, đáng yêu và nhiều màu sắc hơn.
+          Cảm ơn em đã đến và làm cho cuộc sống của anh
+          trở nên dịu dàng, đáng yêu và nhiều màu sắc hơn.
         </p>
 
         <p>
-          Từ khi có em, mỗi ngày đều trở nên đặc biệt hơn. Anh thích nhìn em cười,
-          thích cách em đáng yêu, thích cả những điều nhỏ xíu thuộc về em.
+          Từ khi có em, mỗi ngày đều trở nên đặc biệt hơn.
+          Anh thích nhìn em cười, thích cách em đáng yêu,
+          thích cả những điều nhỏ xíu thuộc về em.
         </p>
 
         <p>
-          Vì em thích màu hồng và Hello Kitty, nên anh muốn làm riêng cho em một chiếc web công chúa,
+          Vì em thích màu hồng và Hello Kitty,
+          nên anh muốn làm riêng cho em một chiếc web công chúa,
           như một món quà nhỏ để lưu lại thật nhiều yêu thương của hai đứa.
         </p>
 
         <p>
-          Anh mong rằng chúng mình sẽ còn bên nhau thật lâu, cùng nhau đi qua thật nhiều niềm vui,
-          thật nhiều kỷ niệm đẹp, và cùng viết tiếp câu chuyện tình yêu này.
+          Anh mong rằng chúng mình sẽ còn bên nhau thật lâu,
+          cùng nhau đi qua thật nhiều niềm vui,
+          thật nhiều kỷ niệm đẹp và cùng viết tiếp câu chuyện tình yêu này.
         </p>
 
         <div class="signature">Yêu em rất nhiều — Huy 💕</div>
@@ -326,14 +398,14 @@
       <h2>Nguyễn Khánh Linh mãi là công chúa của Lê Đức Huy</h2>
       <p>
         Web này là một món quà nhỏ, nhưng tình cảm trong đó là thật.
-        Mong rằng sau này mỗi lần mở lại, hai đứa vẫn sẽ mỉm cười vì những điều đáng yêu đã có cùng nhau.
+        Mong rằng sau này mỗi lần mở lại,
+        hai đứa vẫn sẽ mỉm cười vì những điều đáng yêu đã có cùng nhau.
       </p>
     </div>
   </section>
 
   <!-- MUSIC -->
   <audio id="bgMusic" loop>
-    <!-- THAY link nhạc của bạn vào src bên dưới -->
     <source src="" type="audio/mpeg">
   </audio>
 
@@ -345,7 +417,37 @@
     </div>
   </div>
 
-  <!-- FLOAT BUTTONS -->
+  <!-- LOVE QUESTION -->
+  <div class="love-modal" id="loveModal">
+    <div class="love-modal-card">
+      <div class="love-modal-icon">💖</div>
+      <h2>Linh có yêu Huy không? 🥺</h2>
+      <p>
+        Đây là câu hỏi quan trọng nhất của web này đó nha.
+        Chọn thật lòng đi công chúa Hello Kitty ơi 🎀
+      </p>
+
+      <div class="love-modal-actions" id="loveModalActions">
+        <button class="love-yes" id="loveYesBtn">Cóooo 💗</button>
+        <button class="love-no" id="loveNoBtn">Không 😝</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- LOVE SUCCESS -->
+  <div class="love-success" id="loveSuccess">
+    <div class="love-success-card">
+      <div class="success-icon">👑💞🎀</div>
+      <h2>Biết ngay màaaa 💖</h2>
+      <p>
+        Nguyễn Khánh Linh yêu Lê Đức Huy rất nhiềuooo.
+        Chúc 2 ta mãi hạnh phúc, ngọt ngào và đáng yêu như Hello Kitty nha.
+      </p>
+      <button id="closeSuccessBtn">Đóng lại</button>
+    </div>
+  </div>
+
+  <!-- FLOAT BUTTON -->
   <div class="float-actions">
     <button id="scrollTopBtn" class="float-btn">💗</button>
   </div>
